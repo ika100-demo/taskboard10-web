@@ -50,7 +50,9 @@ describe("AC-001.1 the start page lists the tasks", () => {
   });
 
   it("AC-001.1 shows tasks that appeared between two loads", async () => {
-    let tasks = [{ id: "1", title: "Old one", due_date: null }];
+    let tasks: { id: string; title: string; due_date: string | null }[] = [
+      { id: "1", title: "Old one", due_date: null },
+    ];
     stubFetch(() => json(200, tasks));
     const first = render(await HomePage());
     expect(screen.getByText("Old one")).toBeInTheDocument();
