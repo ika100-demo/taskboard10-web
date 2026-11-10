@@ -1,7 +1,7 @@
 ---
 spec_id: 001-task-board-start-page-that-lists-tasks
 title: Task board start page that lists tasks and adds a task through the task API
-status: building
+status: done
 priority: P1
 shape: web-nextjs
 parent: ika100-demo/taskboard10-gitops:001-persistent-tasks-and-web-task-board
@@ -152,3 +152,4 @@ that adds a `smoke-<uuid>` task in dev.
 - 2026-11-10 created from the system plan, with its criteria (spec 147)
 - 2026-11-10 approved
 - 2026-11-10 building
+- 2026-11-10 done
