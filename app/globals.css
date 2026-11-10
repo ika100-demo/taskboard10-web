@@ -478,3 +478,85 @@ main {
     padding-block: var(--s-2);
   }
 }
+
+/* ---------- task board ---------- */
+
+.task-board {
+  display: grid;
+  gap: var(--s-6);
+  min-width: 0;
+}
+
+.task-list {
+  display: grid;
+  gap: var(--s-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.task-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--s-2) var(--s-4);
+  padding: var(--s-3) var(--s-4);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+}
+
+.task-title {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.task-due {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.task-form {
+  display: grid;
+  gap: var(--s-4);
+  padding: var(--s-4);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.field {
+  display: grid;
+  gap: var(--s-1);
+  min-width: 0;
+}
+
+.field label {
+  font-weight: 600;
+}
+
+.field input {
+  width: 100%;
+  min-height: 2.75rem;
+  padding: var(--s-2) var(--s-3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg);
+  color: var(--text);
+  font: inherit;
+}
+
+.field input[aria-invalid="true"] {
+  border-color: var(--brand-2);
+}
+
+.field-message {
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.task-form .btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
