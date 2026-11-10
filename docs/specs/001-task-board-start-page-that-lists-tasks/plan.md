@@ -10,12 +10,14 @@ tasks:
     covers: [AC-001.1, AC-001.3, AC-001.4, AC-001.5, AC-001.6]
     parallel_safe: true
     depends_on: []
+    done: true
   - id: t5
     title: Smoke tests for the board (read-only and @writes)
     files: [e2e/smoke.spec.ts]
     covers: [AC-001.1, AC-001.2, AC-001.3, AC-001.5]
     parallel_safe: true
     depends_on: []
+    done: true
   - id: t2
     title: Task board client components (list, add form, board state)
     files: [app/_components/task-list.tsx, app/_components/add-task-form.tsx, app/_components/task-board.tsx, app/globals.css]
