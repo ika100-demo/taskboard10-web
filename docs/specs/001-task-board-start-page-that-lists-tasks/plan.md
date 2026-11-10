@@ -24,12 +24,14 @@ tasks:
     covers: [AC-001.1, AC-001.2, AC-001.3, AC-001.4, AC-001.6]
     parallel_safe: true
     depends_on: [t1]
+    done: true
   - id: t3
     title: Route handler POST /api/tasks forwarding to the task API
     files: [app/api/tasks/route.ts]
     covers: [AC-001.3, AC-001.6]
     parallel_safe: true
     depends_on: [t1]
+    done: true
   - id: t4
     title: Replace the landing page with the dynamic task board page
     files: [app/page.tsx, app/_components/feature-card.tsx, app/_components/icons.tsx, tests/page.test.tsx, e2e/home.spec.ts]
